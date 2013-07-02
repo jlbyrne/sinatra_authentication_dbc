@@ -1,0 +1,11 @@
+<div class="container">
+  <% if @id == nil %>
+  	<h1>Welcome!</h1>
+  <% else %>
+  	<ul>
+  	<% User.all.each do |user| %>
+  		<li><%= user.name %></li>
+  	<% end %>
+  <% end %>
+  </ul>
+</div>
